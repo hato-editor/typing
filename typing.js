@@ -107,7 +107,9 @@ let alphabet = ["hyakugaiatteitirinasi", "mizutoabura", "issekinityou", "hiniabu
                                 if(e.key == "s"){
                                     renzokucollect++;
                                     goukeimojisuu++;
+                                    utumoji = "u" + utumoji;
                                     aaa = utumoji;
+                                    yomialpha.textContent = removeChar(yomialpha.textContent, 0);
                                     yomialpha.textContent = "s" + yomialpha.textContent;
                                     maetokushu = "tsu";
                                 }
