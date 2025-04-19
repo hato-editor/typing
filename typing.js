@@ -107,23 +107,17 @@ let alphabet = ["hyakugaiatteitirinasi", "mizutoabura", "issekinityou", "hiniabu
                                 if(e.key == "s"){
                                     renzokucollect++;
                                     goukeimojisuu++;
-                                    utumoji = "u" + utumoji;
                                     aaa = utumoji;
-                                    yomialpha.textContent = removeChar(yomialpha.textContent, 0);
-                                    yomialpha.textContent = "s" + yomialpha.textContent;
-                                    maetokushu = "tsu";
                                 }
                             }
-                        }
-                        if(aaa == "i"){
+                        } else if(aaa == "i"){
                             if(e.key == "h"){
                                 renzokucollect++;
                                 goukeimojisuu++;
                                 aaa = utumoji;
                                 maetokushu = "shi";
                             }
-                        }
-                        if(aaa == "j" && (alphabet[a][b + 1] == "a" || alphabet[a][b + 1] == "u" || alphabet[a][b + 1] == "e" || alphabet[a][b + 1] == "o")){
+                        } else if(aaa == "j" && (alphabet[a][b + 1] == "a" || alphabet[a][b + 1] == "u" || alphabet[a][b + 1] == "e" || alphabet[a][b + 1] == "o")){
                             if(e.key == "z"){
                                 renzokucollect++;
                                 goukeimojisuu++;
@@ -173,7 +167,7 @@ let alphabet = ["hyakugaiatteitirinasi", "mizutoabura", "issekinityou", "hiniabu
                                     aaa = utumoji;
                                     yomialpha.textContent = removeChar(yomialpha.textContent, 0);
                                 }
-                            }else{
+                            } else{
                                 renzokucollect = 0;
                                 goukeimojisuu++;
                                 misstype++;
@@ -189,14 +183,6 @@ let alphabet = ["hyakugaiatteitirinasi", "mizutoabura", "issekinityou", "hiniabu
             }
             if(e.key == "i"){
                 if(maetokushu == "shi"){
-                    renzokucollect++;
-                    goukeimojisuu++;
-                    utumoji = alphabet[a][b];
-                    aaa = utumoji;
-                }
-            }
-            if(e.key == "u"){
-                if(maetokushu == "tsu"){
                     renzokucollect++;
                     goukeimojisuu++;
                     utumoji = alphabet[a][b];
