@@ -18,6 +18,7 @@ let alphabet = ["hyakugaiatteitirinasi", "mizutoabura", "issekinityou", "hiniabu
         let renzokucollect = 0;
         let maetokushu = "";
         let started = false;
+        let timer;
         n[0].style.display = "block";
         yomialpha.style.display = "block";
         imananmonmescreen.style.display = "block";
@@ -36,7 +37,7 @@ let alphabet = ["hyakugaiatteitirinasi", "mizutoabura", "issekinityou", "hiniabu
                 aaa = utumoji;
                 yomialpha.textContent = alphabet[a];
                 started = true;
-                const timer = setInterval(() => {
+                timer = setInterval(() => {
                     time++;
                 }, 1000);
             } else{
